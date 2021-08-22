@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server"
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server  --config webpack.dev.js --open"
   },
   "author": "karthickeyan Natesan",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "clean-webpack-plugin": "^2.0.0"
+    "clean-webpack-plugin": "^2.0.0",
+    "npm-path": "^2.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -19,6 +20,9 @@
     "babel-loader": "^8.2.2",
     "bootstrap": "^4.6.0",
     "css-loader": "^6.2.0",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^5.3.2",
     "jquery": "^3.6.0",
     "mini-css-extract-plugin": "^2.2.0",
     "node-sass": "^6.0.1",
@@ -31,6 +35,8 @@
     "terser-webpack-plugin": "^5.1.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0"
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0",
+    "webpack-merge": "^4.2.1"
   }
 }

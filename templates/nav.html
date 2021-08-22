@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #TAMUK-logo {
+            margin-top: -3.8rem;
+            padding: 1rem;
+            border-top: .2rem solid #fcc10f;
+            background: #003399;
+        }
+
+        @media screen and (max-width:992px) {
+            #TAMUK-logo {
+                margin-top: unset;
+                padding: unset;
+                z-index: unset;
+                border-top: unset;
+                background: unset;
+                box-shadow: unset
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class=" navbar navbar-expand-lg p-lg-1 p-0 shadow">
+        <div class="container">
+            <div class="top-nav-wrapper justify-content-end collapse navbar-collapse">
+
+            </div>
+        </div>
+    </nav>
+    <nav style="border-top:.2rem solid #fcc10f;background-image:url(../src/imgs/large-triangles.svg);background-position: center"
+        class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="TAMUK-logo" class="img-fluid"
+                    src="../src/img/web_header.png" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-main-navigation" aria-controls="offcanvas-main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="sub-nav-wrapper collapse navbar-collapse">
+
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvas-main-navigation"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Main Menu</h5>
+            <button type="button" class="offcanvas-btn btn-close btn-danger text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+        </div>
+    </div>
+
+    
+    
+    
+    <div class="d-flex justify-content-center align-items-center text-white"
+    style="z-index:-1;height:500px;top:0px;background-image: url(https://picsum.photos/1600/900);
+    background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <h1 class="display-1">TESTING</h1>
+</div>
+<div class="container-fluid bg-white">
+    <section class="container my-5">
+            <div class="card text-center">
+                <div class="card-header">
+                    Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+            </div>
+            <div class="row">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <p class="text-center">
+                            Texas A&M University - Kingsville, founded in the early 1900s,
+                            is committed to its mission of teaching, research, and service
+                            in South Texas for the advancement of knowledge and of regional
+                            development. With Students from 40 states and 35 countries,
+                            Texas A&M University - Kingsville provides quality undergraduate
+                            and graduate programs for students of all ageas through
+                            judicious blend of liberal and career education programs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container  my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <h2 class="colorChange">Leadership</h2>
+                        <img class="img-fluid" src="../src/img/placeholder.svg" />
+                        <div class="card-body">
+                            <p>
+                                Meet the administration team that is leading our university to
+                                new heights
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <h2>History</h2>
+                        <img class="img-fluid" src="../src/img/placeholder.svg" />
+                        <div class="card-body">
+                            <p>
+                                Learn how Texas A&M University - Kingsville grew from a
+                                teacher college to a renowned international University serving
+                                students from 35 countries today
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <h2>Javelina News</h2>
+                        <img class="img-fluid" src="../src/img/placeholder.svg" />
+                        <div class="card-body">
+                            <p>
+                                Stay connected with what's happening on campus and around
+                                Javelina Nation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="row align-items-md-center align-items-lg-start">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="../src/img/placeholder.svg" alt="" />
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <p>
+                                Texas A&M University-Kingsville is accredited by the Southern
+                                Association of Colleges and Schools Commission on Colleges to
+                                award baccalaureate, master’s and doctorate degrees. Contact
+                                the Commission on Colleges at 1866 Southern Lane, Decatur,
+                                Georgia 30033-4097 or call 404-679-4500 for questions about
+                                the accreditation of Texas A&M University-Kingsville.
+                            </p>
+                            <button class="btn btn-primary">Undergraduates</button>
+                            <button class="btn btn-primary">Graduates</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="row align-items-md-center align-items-lg-start">
+                <div class="col-md-6 order-md-0 order-12">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <p>
+                                Small class sizes, nationally recognized programs, top-notch
+                                professors. The main campus consists of approximately 250
+                                acres and more than 80 buildings. Schedule a virtual or
+                                in-person tour today to learn more about the history and
+                                beauty of Javelina Nation!
+                            </p>
+                            <button class="btn btn-primary">Visit Us!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="../src/img/placeholder.svg" alt="" />
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="s-footer1">
+        <div class="container-fluid">
+            <div class="footer1" id="footer1"></div>
+            <div class="footerSocialMedia"></div>
+            <div class="copyright"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
