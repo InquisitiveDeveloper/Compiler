@@ -12,6 +12,9 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "clean-webpack-plugin": "^2.0.0",
+    "font-awesome-sass-loader": "^2.0.1",
+    "moment": "^2.29.1",
+    "moment-business-days": "^1.2.0",
     "npm-path": "^2.0.4"
   },
   "devDependencies": {
@@ -20,6 +23,7 @@
     "babel-loader": "^8.2.2",
     "bootstrap": "^4.6.0",
     "css-loader": "^6.2.0",
+    "expose-loader": "^3.0.0",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^5.3.2",

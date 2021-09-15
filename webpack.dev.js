@@ -9,15 +9,17 @@ module.exports = merge(common, {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
+
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./templates/landing.html",
+      template: "./templates/landing_page_original.html",
     }),
   ],
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        // test: /\.scss$/,
+        test:/\.(sass|css|scss)$/,
         use: [
           "style-loader", //3. Inject styles into DOM
           "css-loader", //2. Turns css into commonjs

@@ -1,109 +1,14 @@
-p {
-    color: #003370;
-}
-
-.p {
-    >btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-}
-.standard-btn-blue {
-    color: #fcc10f !important;
-    background-color: #003370;
-    text-decoration: none !important;
-    width: 250px;
-    margin: 5px;
-    white-space: normal !important;
-    height: 100%;
-}
-
-
-.standard-btn-gold:hover {
-    color: #fcc10f !important;
-    background-color: #003370;
-    outline: none!important;
-    box-shadow: 0px 0px 5px 1px #00000088;
-    transition: .3s ease-in-out;
-}
-
-.standard-btn-gold {
-    color: #003370 !important;
-    background-color: #fcc10f;
-    text-decoration: none !important;
-    width: 250px;
-    margin: 5px;
-    white-space: normal !important;
-    height: 100%;
-    box-shadow: 0px 0px 2px 0px #003370;
-}
-.red{
-     a
-    {
-    text-decoration: underline !important;
-    color: #0046D1;
-}
-}
-
 .red {
-    color: #AD0000!important;
+    a {
+      text-decoration: underline !important;
+      color: #0046d1;
+    }
+  }
+  
+  .red {
+    color: #ad0000 !important;
     font-weight: bold;
-}
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
+  }
+  
 
-
-.main_content a:hover {
-    outline: 1px dotted blue;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-main_content * {
-    word-wrap: break-word;
-}
-
-img {
-    vertical-align: middle;
-    border-style: none;
-}
-
-.accordion .card-header {
-    padding: 0px !important;
-    overflow: auto;
-}
-
-.card-header {
-    padding: .75rem 1.25rem;
-    margin-bottom: 0;
-    background-color: rgba(0,0,0,.03);
-    border-bottom: 1px solid rgba(0,0,0,.125);
-}
-
-.White {
-    border: 1px solid rgba(0,0,0,.2) !important;
-    border-radius: .3rem !important;
-    margin: 2px !important;
-}
-
-p, ul, li, div, blockquote {
-    color: #003370;
-}
+  

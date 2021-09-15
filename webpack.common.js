@@ -4,10 +4,16 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: "./src/js/app.js",
-    vendor: "./src/vendor.js",
+    vendor: "./src/js/vendor.js",
   },
   module: {
     rules: [
+        {
+            test: /\.(eot|ttf|woff2?|otf|svg|png|jpg)$/,
+            use: {
+            loader: "file-loader",
+            }
+        },
       {
         test: /\.html$/,
         use: ["html-loader"],

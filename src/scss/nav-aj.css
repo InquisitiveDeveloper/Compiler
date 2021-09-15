@@ -1,0 +1,8 @@
+.card-header .accordion-btn.collapsed:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    transform: rotate(
+180deg);
+    content: "\f139";
+    float: left;
+}

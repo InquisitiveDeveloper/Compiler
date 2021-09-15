@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta content="" name="author" />
+    <title>
+        Standard Page | Texas A&amp;M University Kingsville
+    </title>
+
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+    <script src="moment.js"></script>
+    <script src="moment-business-days.js"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-business-days/1.2.0/index.js"></script>
+
+    <!-- bootstrap  -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+    <!-- css  -->
+    <link href="https://www.tamuk.edu/_dist/main.css" rel="stylesheet" />
+
+
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MTK44QM');</script>
+
+</head>
+
+<body>
+
+
+    <div class="col-lg-9 col-md-9 col-sm-12 main_content" id="default">
+        <main class="container">
+            <h1>Standard Page</h1>
+            <hr />
+            <div>
+                <p class="karthick">testing</p>
+                <div class="row">
+                    <h4>
+
+                        <div>
+                            <label for="datepicker">
+                                <em>
+                                    Calculate Your Processing Timeline (MM/DD/YYYY):
+                                </em>
+                            </label>
+                            <br />
+                            <div class="col">
+                                <input data-date-format="mm/dd/yyyy" data-provide="datepicker" id="datepicker">
+                                <div>
+                                </div>
+
+                                <em>Enter Sponsor Deadline</em>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <table
+                                        class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Processing Timeline</th>
+                                                <th scope="col">Due to Pre-Award</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Processing Timeline"><span><a href="" target="_blank">
+
+                                                            1. Initial notification to ORGS (e.g. Notice of Intent)
+                                                        </a>
+                                                    </span></td>
+                                                <td id='deadline1' class="myclass" nowrap=""
+                                                    data-label="Due to Pre-Award"><span>08/19/2021<font
+                                                            style="color: red" id="two"> Deadline has passed</font>
+                                                        </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Processing Timeline"><span>
+                                                        <a href="" target="_blank">
+                                                            2. Final budget, justification, and draft proposal documents
+                                                        </a>
+                                                    </span></td>
+                                                <td id='deadline2' class="myclass" nowrap=""
+                                                    data-label="Due to Pre-Award"><span>08/26/2021<font
+                                                            style="color: red" id="two"> Deadline has passed</font>
+                                                        </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Processing Timeline"><span>
+                                                        <a href="" target="_blank">
+                                                            3. Final proposal documents ready for submission
+                                                        </a>
+                                                    </span></td>
+                                                <td id='deadline3' class="myclass" nowrap=""
+                                                    data-label="Due to Pre-Award"><span>08/31/2021<font
+                                                            style="color: red" id="two"> Deadline has passed</font>
+                                                        </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Processing Timeline"><span>
+                                                        <a href="" target="_blank">
+
+                                                            4. Internal forms with signatures (e.g.
+                                                            authorization/appendix b)
+                                                        </a>
+                                                    </span></td>
+                                                <td id='deadline4' class="myclass" nowrap=""
+                                                    data-label="Due to Pre-Award"><span>09/01/2021<font
+                                                            style="color: red" id="two"> Deadline has passed</font>
+                                                        </span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+
+
+
+
+
+                                </div>
+                    </h4>
+                </div>
+            </div>
+    </div>
+    </div>
+    </main>
+    <style type="text/css">
+        .datepicker {
+            font-size: 0.875em;
+        }
+
+        .datepicker td,
+        .datepicker th {
+            width: 4.5em;
+            height: 2.5em;
+        }
+    </style>
+    <script type="text/javascript">
+
+
+        const dateFormat = (date) => moment(new Date(date)).format("MM/DD/YYYY");
+
+
+
+        const defaulthandler = () => {
+
+            const calculation = (days, id) => {
+                let updatedDate = moment(new Date(), 'MM/DD/YYYY').businessSubtract(days)._d;
+                let deadlinePass = document.getElementById(id);
+                deadlinePass.innerText = dateFormat(updatedDate);
+                deadlinePass.insertAdjacentHTML('beforeend', `<font style = "color: red"  id = ${id}> Deadline has passed</font>`);
+            }
+
+            document.querySelectorAll(".myclass").forEach((el, index) => {
+                if (index === 0) {
+                    calculation(10, "deadline1")
+                }
+                if (index === 1) {
+                    calculation(5, "deadline2")
+                }
+                if (index === 2) {
+                    calculation(2, "deadline3")
+                }
+                if (index === 3) {
+                    calculation(1, "deadline4")
+                }
+            })
+
+        }
+
+        const dateHandler = (inputDate) => {
+
+
+            document.querySelectorAll(".myclass").forEach((el, index) => {
+
+                const calculationHandler = (days, id) => {
+                    let updatedDate = moment(new Date(inputDate), 'MM/DD/YYYY').businessSubtract(days)._d;
+                    let deadlinePass = document.getElementById(id);
+                    deadlinePass.innerText = dateFormat(updatedDate)
+                    dateFormat(updatedDate) > dateFormat(new Date()) ? "" : deadlinePass.insertAdjacentHTML('beforeend', '<font style = "color: red" id="two"> Deadline has passed</font>');
+                }
+                if (index === 0) {
+                    calculationHandler(10, "deadline1")
+                }
+                if (index === 1) {
+                    calculationHandler(5, "deadline2");
+                }
+                if (index === 2) {
+                    calculationHandler(2, "deadline3");
+                }
+                if (index === 3) {
+                    calculationHandler(1, "deadline4");
+                }
+            })
+        }
+
+
+        $(() => {
+            defaulthandler(new Date());
+        });
+
+        $('#datepicker').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "0,6",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#datepicker').datepicker("setDate", new Date());
+
+
+        $("#datepicker").on("change", function (event) {
+            event.preventDefault()
+            var inputDate = $("#datepicker").val();
+
+            let input = moment(new Date(inputDate)).format("MM/DD/YYYY");
+            let currentdate = moment(new Date()).format("MM/DD/YYYY");
+            if (input >= currentdate) dateHandler(new Date(input));
+            else
+                alert("please enter date as a current date or greater than the current date")
+
+        });
+
+
+    </script>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="../dist/bundle.js" type="text/javascript"></script>
+</body>
+
+</html>

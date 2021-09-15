@@ -1248,12 +1248,10 @@ a {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-blend-mode: lighten;
 	padding: 5px;
 	margin-bottom: 0px;
 	text-align: center;
-	text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-	background: rgba(0, 51, 153, 0.7);
+	background: #003399;
 	font-size: 1.5rem !important;
 	color: #fff !important;
 	h1 {
@@ -3833,12 +3831,7 @@ div.staff-profile-container {
 .staff-profile-contact-info {
 	padding-left: 2px;
 }
-.profile-page-content {
-	display: grid;
-	display: -ms-grid;
-	grid-template-columns: 5fr 1fr;
-	-ms-grid-columns: 5fr 1fr;
-}
+
 .profilePic-right {
 	max-width: 200px;
 	margin-left: auto;
@@ -3876,32 +3869,34 @@ caption {
 .s-White {
 	background: #fff;
 	h2 {
-		color: #003370;
+		color: theme-colors(tGold);
+		
 		font-weight: bold;
 	}
 	a {
 		background: #003370;
 		color: #fff;
 		font-weight: bold;
+		border:1px solid #003370;
 		&:active {
-			background: #003370 !important;
+			background: theme-colors(tGold) !important;
 			color: #fff !important;
 		}
 		&:hover {
 			background: transparent;
-			border: 1px solid #003370;
+			border: 1px solid theme-colors(tGold);
 			color: #003370;
 		}
 		&:focus {
 			background: transparent;
-			border: 1px solid #003370;
-			color: #003370;
+			border: 1px solid theme-colors(tGold);
+			color: theme-colors(tGold);
 		}
 	}
 }
 .s-Gold {
 	h2 {
-		color: #003370;
+		color: theme-colors(tGold);;
 		font-weight: bold;
 	}
 	background: #fcc10f;
@@ -3909,6 +3904,7 @@ caption {
 		background: #003370;
 		color: #fff;
 		font-weight: bold;
+		border:1px solid #003370;
 		&:active {
 			background: #003370 !important;
 			color: #fff !important;
@@ -5116,8 +5112,20 @@ table {
 		}
 	}
 }
+$theme-colors: (
+    "tBlue": #003399,
+    "tDarkBlue": #003370,
+    "tGold": #fcc10f,
+    "tTerra": #cc6666,
+    );
+
+	@function theme-colors($key){
+		@return map-get($theme-colors, $key);
+
+}
+
 .s-footer1 {
-	background-color: #003370;
+	background-color: theme-colors(tBlue);
 	position: relative;
 	padding: 4rem 2rem;
 	border-top: 1px solid #eee;
@@ -5152,7 +5160,7 @@ table {
 	>div {
 		display: inline-block;
 		width: 25%;
-		float: left;
+		float:left;
 		padding: 0px 2rem;
 		>ul {
 			>li {
@@ -5413,6 +5421,9 @@ table {
 	.card {
 		border: 1px solid #366dd8;
 		box-shadow: 0px 0px 100px 1px #ffffff4d;
+	}
+	h2{
+	    color:#fff;
 	}
 	background: #1b49a4;
 	box-shadow: inset 0px 0px 10vh #003399;
