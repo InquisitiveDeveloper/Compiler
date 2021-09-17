@@ -16,29 +16,7 @@ module.exports = {
   plugins: [new MiniCssExtractPlugin(), new CleanWebpackPlugin()],
   module: {
     rules: [
-
       
-                {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-      {
-        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: '../fonts/',
-            publicPath: '../static/fonts'
-          }
-        }]
-      },
       {
         test: /\.scss$/,
         use: [
@@ -47,13 +25,15 @@ module.exports = {
           'sass-loader',
         ],
       },
-
       {
-        test: /\.(svg|gif|png|eot|woff|ttf)$/,
-        use: [
-          'url-loader',
-        ],
-      },
+        test:/\.(woff|woff2|eot|ttf|svg)$/,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'fonts',
+        }
+      }
+
+      
     ],
   },
   optimization: {

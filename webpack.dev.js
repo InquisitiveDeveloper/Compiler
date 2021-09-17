@@ -17,15 +17,24 @@ module.exports = merge(common, {
   ],
   module: {
     rules: [
+      
       {
         // test: /\.scss$/,
         test:/\.(sass|css|scss)$/,
+        // test: /\.s[ac]ss$/i,
         use: [
           "style-loader", //3. Inject styles into DOM
           "css-loader", //2. Turns css into commonjs
           "sass-loader", //1. Turns sass into css
         ],
       },
+      {
+        test:/\.(woff|woff2|eot|ttf|svg)$/,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'fonts',
+        }
+      }
     ],
   },
 });

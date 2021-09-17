@@ -187,56 +187,33 @@
 
 .accordion-btn {
   height:fit-content;
-  color: #003370 !important;
-  width: 100%;
-  font-weight: bold!important;
-  text-align: left !important;
-  white-space: normal !important;
-}
-
-
-[type=button], [type=reset], [type=submit], button {
-  -webkit-appearance: button;
-}
-button, select {
-  text-transform: none;
-}
-button, input {
-  overflow: visible;
-}
-button, input, optgroup, select, textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
+  }
 
 
 
 
 
-btn.collapsed:before {
+
+
+
+
+
+
+
+
+
+
+
+
+.card-header .accordion-btn.collapsed:before {
   font-family: "Font Awesome 5 Pro";
-  font-weight: 300;
+  font-weight: 600;
   transform: rotate(
-180deg
-);
+180deg);
   content: "\f139";
   float: left;
 }
-
-
-.down-arrow:before {
-  font-family: "Font Awesome 5 Pro";
-    font-weight: 600;
-    content: "\f139";
-    float: left;
-    transition-duration: 400ms;
-
-}
-
-buttton.accordion-btn.btn.btn-link.collapsed.accordion-btn-White::before {
-
+.card-header .accordion-btn:before {
   font-family: "Font Awesome 5 Pro";
   font-weight: 600;
   content: "\f139";
@@ -244,42 +221,45 @@ buttton.accordion-btn.btn.btn-link.collapsed.accordion-btn-White::before {
   transition-duration: 400ms;
 }
 
-.accordion>.card>.card-header>.accordion-btn.collapsed::before{
-  font-family: "Font Awesome 5 Pro" !important;
-  font-weight: 300 !important;
-  transform: rotate(
-180deg
-) !important;
-  content: "\f139" !important;
-  float: left !important;
+.btn:focus {
+ outline: none !important;
+ box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 
 
+.nav-link:hover {
+  background: #fcc10f;
+}
 
-
-/*new css */
-
-
-
-.accordion-btn-White {
+h2 {
   color: #003370 !important;
 }
 
+.deanPicPathText>p>span {
+  color: #003370;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Charmonman !important;
+}
 
-.btn.focus{
-  outline: 0;
-box-shadow: 0 0 0 0.2rem rgba(0,123,255, 0.25) !important;
+
+
+.btn-block {
+  display: block;
+  width: 100%;
 }
 
 
 
 
 
-// .card-header .accordion-btn.collapsed:before {
-//   font-family: "Font Awesome 5 Pro";
-//   font-weight: 300;
-//   transform: rotate(
-// 180deg);
-//   content: "\f139";
-//   float: left;
+// .accordion .card-header {
+//   padding: .75rem 1.25rem !important;
+//   margin-bottom: 0 !important;
+//   background-color: rgba(0,0,0,.03) !important;
+//   border-bottom: 1px solid rgba(0,0,0,.125) !important;
 // }
+
+.accordion .card .card-header{
+  padding: 0.75rem 1.25rem !important;
+}

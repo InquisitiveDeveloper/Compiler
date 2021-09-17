@@ -1,14 +1,17 @@
-import jQuery from "jquery";
-window.$ = window.jQuery = jQuery;
 import './nav.js';
 import './footer.js';
-import 'bootstrap';
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
+
 import * as popper from 'popper.js'
 window.popper = popper
+import 'bootstrap';
+
+import '@fortawesome/fontawesome-free/js/all.js';
+import "@fontsource/charmonman";
 
 
-
-
+require('typeface-charmonman')
 
 var moment = require('moment-business-days');
 moment.updateLocale('us', {

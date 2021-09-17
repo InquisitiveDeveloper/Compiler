@@ -10,12 +10,14 @@
   },
   "author": "karthickeyan Natesan",
   "dependencies": {
+    "@fontsource/charmonman": "^4.5.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "clean-webpack-plugin": "^2.0.0",
     "font-awesome-sass-loader": "^2.0.1",
     "moment": "^2.29.1",
     "moment-business-days": "^1.2.0",
-    "npm-path": "^2.0.4"
+    "npm-path": "^2.0.4",
+    "typeface-charmonman": "^1.1.13"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

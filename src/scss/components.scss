@@ -38,7 +38,7 @@
   }
   
   .accordion {
-    .card-header {
+      .card-header {
       padding: 0px !important;
       overflow: auto;
     }
@@ -46,6 +46,7 @@
       border: 0px !important;
     }
   }
+ 
   
   .accordion-btn {
     color: theme-colors(tDarkBlue) !important;
