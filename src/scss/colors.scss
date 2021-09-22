@@ -1,0 +1,12 @@
+$theme-colors: (
+    "tBlue": #003399,
+    "tDarkBlue": #003370,
+    "tGold": #fcc10f,
+    "tTerra": #cc6666,
+    );
+
+    @function theme-colors($key){
+            @return map-get($theme-colors, $key);
+
+    }
+

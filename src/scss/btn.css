@@ -1,0 +1,238 @@
+.statbtn {
+  color: theme-colors(tDarkBlue);
+  font-weight: bold;
+  display: table;
+  margin: 20px auto;
+}
+
+.statbtn p {
+  text-shadow: 1px 1px grey;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 60px;
+}
+
+.statbtn h1 {
+  text-shadow: 1px 1px grey;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.standard-btn-gold {
+  color: theme-colors(tDarkBlue) !important;
+  background-color: theme-colors(tGold);
+  text-decoration: none !important;
+  width: 250px;
+  margin: 5px;
+  white-space: normal !important;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 2px 0px theme-colors(tDarkBlue);
+          box-shadow: 0px 0px 2px 0px theme-colors(tDarkBlue);
+}
+
+.standard-btn-gold:hover {
+  color: theme-colors(tGold) !important;
+  background-color: theme-colors(tDarkBlue);
+  outline: none !important;
+  -webkit-box-shadow: 0px 0px 5px 1px #00000088;
+          box-shadow: 0px 0px 5px 1px #00000088;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.standard-btn-gold:active {
+  -webkit-box-shadow: inset 0px 0px 0px 1px theme-colors(tDarkBlue) !important;
+          box-shadow: inset 0px 0px 0px 1px theme-colors(tDarkBlue) !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.standard-btn-blue {
+  color: theme-colors(tGold) !important;
+  background-color: theme-colors(tDarkBlue);
+  text-decoration: none !important;
+  width: 250px;
+  margin: 5px;
+  white-space: normal !important;
+  height: 100%;
+}
+
+.standard-btn-blue:hover {
+  color: theme-colors(tDarkBlue) !important;
+  outline: none !important;
+  background-color: theme-colors(tGold);
+  -webkit-box-shadow: 0px 0px 5px 1px theme-colors(tBlue) 55;
+          box-shadow: 0px 0px 5px 1px theme-colors(tBlue) 55;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.standard-btn-blue:active {
+  -webkit-box-shadow: inset 0px 0px 0px 1px theme-colors(tBlue) 55 !important;
+          box-shadow: inset 0px 0px 0px 1px theme-colors(tBlue) 55 !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.standard-btn-blue.btn-popover {
+  width: unset !important;
+}
+
+.standard-btn-gold.btn-popover {
+  width: unset !important;
+}
+
+.btn-min-block {
+  min-width: 170px;
+  line-height: 26px;
+}
+
+.btn-theme {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-right: 15px;
+}
+
+.btn-theme:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+button {
+  overflow: visible;
+  position: relative;
+  float: left;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 30%;
+  color: #fff;
+  text-transform: uppercase;
+  background: theme-colors(tBlue);
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+button:focus:before {
+  border-right-color: #e0b10e;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.p > btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.standard-btn-blue {
+  color: theme-colors(tGold) !important;
+  background-color: theme-colors(tDarkBlue);
+  text-decoration: none !important;
+  width: 250px;
+  margin: 5px;
+  white-space: normal !important;
+  height: 100%;
+}
+
+.standard-btn-gold:hover {
+  color: theme-colors(tGold) !important;
+  background-color: theme-colors(tDarkBlue);
+  outline: none !important;
+  -webkit-box-shadow: 0px 0px 5px 1px #00000088;
+          box-shadow: 0px 0px 5px 1px #00000088;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.standard-btn-gold {
+  color: theme-colors(tDarkBlue) !important;
+  background-color: theme-colors(tGold);
+  text-decoration: none !important;
+  width: 250px;
+  margin: 5px;
+  white-space: normal !important;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 2px 0px theme-colors(tDarkBlue);
+          box-shadow: 0px 0px 2px 0px theme-colors(tDarkBlue);
+}
+
+.inlineDeadline {
+  color: red;
+}
+
+.accordion-btn {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card-header .accordion-btn.collapsed:before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 600;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  content: "\f139";
+  float: left;
+}
+
+.card-header .accordion-btn:before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 600;
+  content: "\f139";
+  float: left;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.nav-link:hover {
+  background: #fcc10f;
+}
+
+h2 {
+  color: #003370 !important;
+}
+
+.deanPicPathText > p > span {
+  color: #003370;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Charmonman !important;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.accordion .card .card-header {
+  padding: 0.75rem 1.25rem !important;
+}
+/*# sourceMappingURL=btn.css.map */
