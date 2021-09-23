@@ -1,8 +1,8 @@
 $theme-colors: (
-    "tBlue": white,
-    "tDarkBlue": #003370,
-    "tGold": white,
-    "tTerra": #cc6666,
+        "tBlue": #003399,
+        "tDarkBlue": #003370,
+        "tGold": #fcc10f,
+        "tTerra": #cc6666,
     );
 
     @function theme-colors($key){
