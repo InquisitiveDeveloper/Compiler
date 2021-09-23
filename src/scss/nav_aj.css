@@ -1839,4 +1839,10 @@ over here */
     word-break: break-word;
   }
 }
+
+.sticky-dept-sublinks {
+  top: 78px !important;
+  z-index: 3 !important;
+  background-color: #fff;
+}
 /*# sourceMappingURL=nav_aj.css.map */
