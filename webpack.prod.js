@@ -6,17 +6,22 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+
 
 module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, 'dist'),
-},
+  },
   optimization: {
+    
     minimizer: [
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
+      new BundleAnalyzerPlugin(),
       new HtmlWebpackPlugin({
         template: "./src/templates/landing.html",
         minify: false

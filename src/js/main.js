@@ -1,5 +1,5 @@
-import './nav.js';
-import './footer.js';
+// import './nav.js';
+// import './footer.js';
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
 
@@ -8,7 +8,6 @@ window.popper = popper
 import 'bootstrap';
 
 import '@fortawesome/fontawesome-free/js/all.js';
-
 
 
 var moment = require('moment-business-days');
